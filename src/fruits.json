@@ -1,0 +1,87 @@
+[
+    {
+        "img": "game_fruit_blue.png",
+        "splash_img": "game_fruit_blue_s.png",
+        "slice_l": {
+            "img": "game_fruit_blue_l.png",
+            "anchor" : {"x": 1, "y": 0.5}
+        },
+        "slice_r":  {
+            "img": "game_fruit_blue_r.png",
+            "offset": {"x": 39, "y": -97},
+            "anchor" : {"x": 0, "y": 0.5}
+        },
+        "points": 30
+    },
+    {
+        "img": "game_fruit_green.png",
+        "splash_img": "game_fruit_green_s.png",
+        "slice_l": {
+            "img": "game_fruit_green_l.png",
+            "anchor" : {"x": 1, "y": 0.5}
+        },
+        "slice_r":  {
+            "img": "game_fruit_green_r.png",
+            "offset": {"x": 59, "y": 0},
+            "anchor" : {"x": 0, "y": 0.5}
+        },
+        "slice_offset": {"x": 59, "y": 0},
+        "points": 5
+    },
+    {
+        "img": "game_fruit_orange.png",
+        "splash_img": "game_fruit_orange_s.png",
+        "slice_l": {
+            "img": "game_fruit_orange_l.png",
+            "anchor" : {"x": 1, "y": 0.5}
+        },
+        "slice_r":  {
+            "img": "game_fruit_orange_r.png",
+            "offset": {"x": 75, "y": 0},
+            "anchor" : {"x": 0, "y": 0.5}
+        },
+        "points": 20
+    },
+    {
+        "img": "game_fruit_purple.png",
+        "splash_img": "game_fruit_purple_s.png",
+        "slice_l": {
+            "img": "game_fruit_purple_l.png",
+            "anchor" : {"x": 1, "y": 0.5}
+        },
+        "slice_r":  {
+            "img": "game_fruit_purple_r.png",
+            "offset": {"x": 83, "y": -8},
+            "anchor" : {"x": 0, "y": 0.5}
+        },
+        "points": 15
+    },
+    {
+        "img": "game_fruit_red.png",
+        "splash_img": "game_fruit_red_s.png",
+        "slice_l": {
+            "img": "game_fruit_red_l.png",
+            "anchor" : {"x": 1, "y": 0.5}
+        },
+        "slice_r":  {
+            "img": "game_fruit_red_r.png",
+            "offset": {"x": 74, "y": 1},
+            "anchor" : {"x": 0, "y": 0.5}
+        },
+        "points": 25
+    },
+    {
+        "img": "game_fruit_yellow.png",
+        "splash_img": "game_fruit_yellow_s.png",
+        "slice_l": {
+            "img": "game_fruit_yellow_l.png",
+            "anchor" : {"x": 0.5, "y": 1}
+        },
+        "slice_r":  {
+            "img": "game_fruit_yellow_r.png",
+            "offset": {"x": 0, "y": 71},
+            "anchor" : {"x": 0.5, "y": 0}
+        },
+        "points": 10
+    }
+]
