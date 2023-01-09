@@ -21,6 +21,7 @@ export default class Fruit {
         this.sprite = new PIXI.Sprite(texture);
         this.anim = null;
         this.animStarted = false;
+        this.canSlice = false;
 
         this.sprite_l = new PIXI.Sprite(text_slice_l);
         this.sprite_l.anchor.set(data.slice_l.anchor.x, data.slice_l.anchor.y);
@@ -72,7 +73,7 @@ export default class Fruit {
     }
 
     animateSlice() {
-        if (this.animStarted) return;
+        if (!this.g_controller.isSwordActive || this.animStarted) return;
 
         this.animStarted = true;
         this.sprite.interactive = false;

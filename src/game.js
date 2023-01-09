@@ -7,6 +7,7 @@ export default class Game {
         this.gameWidth = data.settings.width;
         this.gameHeight = data.settings.height;
         this.isPaused = false;
+        this.isSwordActive = false;
 
         this.gameContainer = new PIXI.Container();
         this.UIContainer = new PIXI.Container();
@@ -52,6 +53,13 @@ export default class Game {
 
     start() {
         this.stage.addChild(this.gameContainer);
+        this.stage.interactive = true;
+        this.stage.on('pointerdown', () => {
+            this.isSwordActive = true
+        });
+        this.stage.on('pointerup', () => {
+            this.isSwordActive = false
+        });
 
         // Start spawning fruits on screen
         const gameTimer = setInterval(() => {
@@ -75,10 +83,12 @@ export default class Game {
 
     pause() {
         this.isPaused = true;
+        this.stage.interactive = false;
     }
 
     continue() {
         this.isPaused = false;
+        this.stage.interactive = true;
     }
 
     spawnFruit() {
@@ -95,6 +105,7 @@ export default class Game {
 
     end() {
         console.log('Game Over');
+        this.stage.interactive = false;
         this.gameContainer.visible = false;
         this.showScore();
     }
